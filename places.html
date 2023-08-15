@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/3b18ac9277.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/places-style.css">
+    <title>Place Keeper</title>
+</head>
+
+<body onload="onInIt()">
+    <article>
+        <h2>Place Keeper</h2>
+        <h4>Find your way back to your best places</h4>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a> |
+        <a href="user-settings.html"><i class="fa-solid fa-gear"></i></a> |
+        <a href="places.html"><i class="fa-solid fa-map-location-dot"></i></a>
+    </article>
+
+    <div class="map" style="width:100%;height:500px;"></div>
+    <p class="err-msg"></p>
+
+    <article>
+        <h3>places🌍</h3>
+        <span class="places">
+           
+        </span>
+        <button onclick="downloadCSV()">Download CSV <i class="fa-solid fa-download"></i></button>
+    </article>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9SpyLlVqGFhsZLgZx0X1CGlLxt0RiUxM">
+            // AIzaSyD9SpyLlVqGFhsZLgZx0X1CGlLxt0RiUxM 
+    </script>
+    <script src="js/services/util.service.js"></script>
+    <script src="js/services/placees.service.js"></script>
+    <script src="js/placees.controller.js"></script>
+</body>
+
+</html>

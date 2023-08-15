@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/3b18ac9277.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/settings-style.css">
+    <title>Settings</title>
+</head>
+
+<body onload="onInIt()">
+    <h1>Settings</h1>
+    <form id="frmSettings" onsubmit="onSet(event)">
+        <h4>-User-</h4>
+        <article>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" />
+        </article>
+        <article>
+            <label for="age">Age:</label>
+            <input type="range" id="age" name="age" step="1" min="3" max="120" value="18"
+                oninput="onShowAge(this.value)" />
+            <span id="sAge">18</span>
+        </article>
+        <h4>-Color-</h4>
+        <article>
+            Set Background Color:
+            <input required type="color" id="color-background" name="color-background" value="#ff0000" />
+        </article>
+        <article>
+            Set Text Color:
+            <input required type="color" id="color-text" name="color-text" value="#ff0000" />
+        </article>
+        <article>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" />
+        </article>
+
+        <button>set</button>
+    </form>
+    <a href="index.html"><i class="fa-solid fa-house"></i></a> |
+    <a href="user-settings.html"><i class="fa-solid fa-gear"></i></a> |
+    <a href="places.html"><i class="fa-solid fa-map-location-dot"></i></a>
+
+    <script src="js/services/util.service.js"></script>
+    <script src="js/services/settings.service.js"></script>
+    <script src="js/settings.controller.js"></script>
+</body>
+
+</html>

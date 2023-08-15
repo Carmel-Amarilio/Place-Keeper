@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(205, 221, 226);
+}
+
+article {
+    text-align: center;
+    background-color: rgb(57, 142, 174);
+    width: 500px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+i {
+    color: rgb(51, 207, 231);
+}
+
+.fa-trash {
+    color: black;
+}
+.fa-location-dot {
+    color: rgb(216, 84, 55);
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+button {
+    border: 0;
+    border-radius: 5px;
+    color: aliceblue;
+    cursor: pointer;
+    color: rgb(74, 200, 242);
+}
